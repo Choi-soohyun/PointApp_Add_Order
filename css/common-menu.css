@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+h1, h2, h3 { 
+	margin: 0;
+}
+input[type='button'] {
+	margin: 0;
+	padding: 0.5em 1em;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border: 0;
+	border-radius: 3px;
+}
+.scrollLock {
+	overflow: hidden;
+}
+
+.nav {
+	display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0px 15px;
+    background: #fff;
+}
+.nav .back {
+	width: 15%;
+}
+.nav .back img {
+	width: 22px;
+}
+.nav header {
+	width: 70%;
+	text-align: center;
+}
+.nav .cart {
+	position: relative;
+	width: 15%;
+	text-align: right;
+}
+.nav .cart img {
+	width: 23px;
+}
+.nav .cart span {
+	position: absolute;
+	top: 33%;
+	right: 10px;
+	min-width: 20px;
+	padding: 0.25em;
+	text-align: center;
+	font-size: 0.75rem;
+	color: #fff;
+	background-color: #000;
+	border-radius: 1em;
+}
+
+
+
+
+
