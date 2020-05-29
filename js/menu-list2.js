@@ -35,8 +35,8 @@ const searchHistory = (e) => {
 	const body = document.getElementsByTagName('body')[0];
 
 	recentlyHistory.classList.remove('hide');
-	body.classList.add('scrollLock');
 	btnCartCount.classList.add('search-mode');
+	body.classList.add('scrollLock');
 }
 
 
@@ -55,11 +55,9 @@ const searchDeleteAll = () => {
 // 최근 검색어 닫기
 const searchPopClose = () => {
 	const recentlyHistory = document.getElementById('recentlyHistory');
-	const mask = document.querySelector('.mask');
 	const body = document.getElementsByTagName('body')[0];
 
 	recentlyHistory.classList.add('hide');
-	mask.classList.add('hide');
 	body.classList.remove('scrollLock');
 }
 

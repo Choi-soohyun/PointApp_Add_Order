@@ -83,6 +83,19 @@ const dimOrderOpen = (e) => {
 	// TODO 주문하는 함수에 shop 정보 넘기기
 	// 
 	// TODO 주문이 완료되면, 완료 팝업창 띄우고 10초가 지나거나 ok누르면 , 주문 리스트로 이동
+	const ordered = document.querySelector('.dim-ordered');
+	ordered.classList.remove('hide');
+
+	const orderedSecond = document.querySelector('.dim-ordered .ok');
+
+	let countdown = 10;
+	let countdownTimer = setInterval(function(e) {
+		orderedSecond.innerText = countdown--;
+		if(countdown <= 0) {
+			clearInterval(countdownTimer);
+			ordered.classList.add('hide'); // TODO 주문 리스트로 이동하는 걸로 바꾸기
+		}
+	}, 1000);
 }
 
 
