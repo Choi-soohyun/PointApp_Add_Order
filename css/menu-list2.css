@@ -1,7 +1,26 @@
-
 body { 
 	background-color: #eeeef094;
 }
+.nav { width:100%; background-color: #fff; }
+.nav-scroll-fixed { position: fixed; top: 0; z-index: 1;}
+.cate-scroll-fixed { position: fixed; top: 45px; z-index: 1;  }
+.menu-scroll-fixed { position: absolute; padding-top: 105px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .shop-info { 
 	height: 145px;
 	padding: 1em;
@@ -10,7 +29,7 @@ body {
     border-top: 1px solid #dfdfdf;
 	border-bottom: 1px solid #ddd; 
 	overflow: hidden;
-	transition: 1s;
+	transition: 0.5s;
 }
 .shop-info h3 {
 }
@@ -27,14 +46,6 @@ body {
 .shop-info a img {
 	width: 12px;
 }
-.shop-hidden {
-	height: 0px;
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-	overflow: hidden;
-}
-
 
 
 
@@ -130,9 +141,10 @@ body {
 
 .cate { 
 	display: flex; 
-	overflow-y: auto;
+	width: 100%; 
 	padding: 1em;
 	background: #fff;
+	overflow-y: auto;
 }
 .cate .cate-item { 
 	margin: 0.25em;
